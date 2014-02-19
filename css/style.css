@@ -1,0 +1,120 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: #f1f1f1;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+/*SIDE MENU*/
+
+#showSideMenu{
+background: white url("../img/sideMenu.png") no-repeat center center;
+border: none;
+height: 17px;
+width: 24px;
+padding: 25px;
+border-right: 1px solid #ccc;
+cursor: pointer;
+}
+
+.sideMenu{
+	background-color:#32323a;
+	coor: white;
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	top: 0;	
+	left: -200px;
+	z-index: 1000;
+}
+
+.sideMenu.sideMenu-open {
+	left: 0px;
+}
+
+.sideMenu-body {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.sideMenu-body-toright {
+	left: 200px;
+}
+
+.sideMenu,
+.sideMenu-body {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#sideNav{
+	list-style-type: none;
+	margin-top: 50px;
+}
+
+#sideNav a{
+	position: relative;
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 12px 0 12px 20px;
+}
+
+#sideNav .navSelected{
+background-color: #1fb5ad;
+color: white;
+}
+
+.sideNavItem{
+border-bottom: 1px solid #95a0aa;
+}
+
+.sideNavItem:hover{
+background-color: #1fb5ad;
+}
+
+
+/* MAIN SECTION */
+#topBar{
+height: 50px;
+background-color: white;
+border-bottom: 1px solid #ccc;
+}
+
+main{
+	color: black;
+	padding: 30px 0 0 50px;
+}
+
+i{
+	margin-right: 10px;
+}
+
+h1{
+	font-size: 36px;
+	font-weight: normal;
+	color: #444;
+}
+
+h2, h3{
+	text-align: center;
+	font-weight: normal;
+	color: white;
+}
+
+h2{
+font-size: 24px;
+}
+
+h3{
+font-size: 16px;
+}
+
+img{
+	margin: 51px 0 0 50px;
+}

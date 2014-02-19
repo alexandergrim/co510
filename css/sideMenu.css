@@ -1,0 +1,30 @@
+/* General styles for all menus */
+.sideMenu {
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	top: 0;	
+	left: -200px;
+	z-index: 1000;
+}
+
+.sideMenu.sideMenu-open {
+	left: 0px;
+}
+
+.sideMenu-body {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.sideMenu-body-toright {
+	left: 200px;
+}
+
+.sideMenu,
+.sideMenu-body {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
