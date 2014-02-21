@@ -100,8 +100,12 @@ main{
 	padding: 30px 0 0 50px;
 }
 
-i{
+i.iLeft{
 	margin-right: 10px;
+}
+
+i.iRight{
+	margin-left: 5px;
 }
 
 h1{
@@ -136,9 +140,11 @@ label{
 font-size: 14px;
 margin-right: 5px;
 color: #66666d;
+display: inline-block;
+width: 80px;
 }
 
-input[type=text]{
+input[type=text], input[type=password]{
 	margin-bottom : 15px;
 	border: 1px solid #cecedc;
 	background: none;
@@ -148,7 +154,7 @@ input[type=text]{
 	color: #66666d;
 }
 
-button.submit{
+button.submit, button.login{
 	border: none;
 	background: #1abc9c;
 	border-bottom: 3px solid #16a085;
@@ -159,14 +165,28 @@ button.submit{
 	margin-left: 20px;
 }
 
-button.submit:active{
+button.submit:active, button.logic:active{
 border: none; 	
 position: relative;
 top: 3px;
+}
+
+button.login{
+position: relative;
+margin-top: 10px;
+left: 70px;
+width: 70px;
+padding-left: 4px;
+margin-bottom: 10px;
 }
 
 article {
 margin-top: 10px;
 padding: 20px 20px 5px 20px;
 background-color: white;
+}
+
+article#login{
+	margin: 0 auto;
+	width: 250px;
 }

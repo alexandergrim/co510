@@ -8,7 +8,7 @@
 			<label for="textSearchId">Staff ID: </label>
 			<input type="text" id="textSearchId">
 	
-			<button class="submit"><i class="icon-search icon-white"></i>Find</button>
+			<button class="submit"><i class="icon-search icon-white iLeft"></i>Find</button>
 	
 	</article>
 	
