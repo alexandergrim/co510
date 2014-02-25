@@ -111,7 +111,7 @@ i.iTable{
 	margin-right: 20px;
 }
 
-h1{
+h1, h4{
 	font-size: 36px;
 	font-weight: normal;
 	color: #444;
@@ -131,6 +131,11 @@ h3{
 font-size: 16px;
 }
 
+h4{
+font-size: 16px;
+margin-bottom: 10px;
+}
+
 p {
 font-size: 14px;
 }
@@ -144,17 +149,17 @@ font-size: 14px;
 margin-right: 5px;
 color: #66666d;
 display: inline-block;
-width: 80px;
+width: 100px;
 }
 
 input[type=text], input[type=password]{
-	margin-bottom : 15px;
 	border: 1px solid #cecedc;
 	background: none;
 	font-size: 14px;
 	padding: 3px 3px 3px 5px;
 	border-radius: 2px;
 	color: #66666d;
+	margin-bottom: 10px;
 }
 
 button.submit, button.login{
@@ -165,7 +170,6 @@ button.submit, button.login{
 	height: 30px;
 	width: 65px;
 	cursor: pointer;
-	margin-left: 20px;
 }
 
 button.submit:active, button.logic:active{
@@ -180,25 +184,23 @@ margin-top: 10px;
 left: 70px;
 width: 70px;
 padding-left: 4px;
-margin-bottom: 10px;
 }
 
 article {
 margin-top: 10px;
-padding: 20px 20px 5px 20px;
+padding: 20px 20px 20px 20px;
 background-color: white;
 }
 
 article#login{
 	margin: 0 auto;
-	width: 250px;
+	width: 275px;
 }
 
 
 table{
 border-spacing: 0px;
 border-collapse: collapse;
-margin-bottom: 10px;
 }
 
 td, th{
@@ -233,3 +235,19 @@ th.headerSortUp {
 th.headerSortDown { 
     background-image: url(../img/desc.gif); 
 } 
+
+#addRecord{
+width: 800px
+}
+
+select{
+background: none;
+border: 1px solid #cecedc;
+padding: 5px;
+color: #66666d;
+}
+
+.input{
+display: inline-block;
+margin-right: 50px;
+}
