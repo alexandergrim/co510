@@ -31,7 +31,6 @@ cursor: pointer;
 
 .sideMenu{
 	background-color:#32323a;
-	coor: white;
 	position: fixed;
 	width: 200px;
 	height: 100%;
@@ -106,6 +105,10 @@ i.iLeft{
 
 i.iRight{
 	margin-left: 5px;
+}
+
+i.iTable{
+	margin-right: 20px;
 }
 
 h1{
@@ -190,3 +193,43 @@ article#login{
 	margin: 0 auto;
 	width: 250px;
 }
+
+
+table{
+border-spacing: 0px;
+border-collapse: collapse;
+margin-bottom: 10px;
+}
+
+td, th{
+	border: 1px solid #cecedc;
+	margin: 0px;
+	padding: 5px 10px;
+}
+
+th{
+color: #444;
+}
+
+td{
+color: #66666d;
+}
+
+th.header { 
+    background-image: url(../img/tableUnsorted.gif);     
+    cursor: pointer; 
+    font-weight: bold; 
+    background-repeat: no-repeat; 
+    background-position: center left; 
+    padding-left: 20px; 
+    border-right: 1px solid #dad9c7; 
+    margin-left: -1px; 
+} 
+
+th.headerSortUp { 
+    background-image: url(../img/asc.gif); 
+} 
+
+th.headerSortDown { 
+    background-image: url(../img/desc.gif); 
+} 

@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/style.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/bootstrap.min.css">	
 	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 
 <body class="sideMenu-body">
@@ -45,7 +46,3 @@
 		};
 		
 	</script>
-
-</body>
-
-</html>
