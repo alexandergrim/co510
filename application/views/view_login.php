@@ -22,7 +22,7 @@
 				<label for="textPassword">Password</label>
 				<input type="password" id="textPassword">
 		
-				<button class="login">Login<i class="icon-arrow-right icon-white iRight"></i></button>
+				<br /><button class="login">Login<i class="icon-arrow-right icon-white iRight"></i></button>
 			</form>
 	
 		</article>
