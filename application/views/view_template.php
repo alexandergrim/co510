@@ -16,14 +16,14 @@
 
 		<img src="<?php echo base_url();?>/img/avatar.jpg">
 
-		<h2>Robb Stark</h2>
+		<h2><?php echo $username ?></h2>
 		<h3>Director</h3>
 
 		<ul id="sideNav">
 			<li class="sideNavItem"><a href="addRecord"></i><i class="icon-plus icon-white iLeft"></i>Add Record</a></li>
-			<li class="sideNavItem navSelected"><a href="findRecord"><i class="icon-search icon-white iLeft"></i>Find Record</a></li>
+			<li class="sideNavItem"><a href="findRecord"><i class="icon-search icon-white iLeft"></i>Find Record</a></li>
 			<li class="sideNavItem"><a href=""><i class="icon-edit icon-white iLeft"></i>Modify Record</a></li>
-			<li class="sideNavItem"><a href="login"><i class="icon-off icon-white iLeft"></i>Logout</a></li>
+			<li class="sideNavItem"><a href="login/logout"><i class="icon-off icon-white iLeft"></i>Logout</a></li>
 		</ul>
 
 	</nav>

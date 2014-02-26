@@ -15,14 +15,14 @@
 	
 		<article id="login">
 	
-			<form>
+			<form action="login/doLogin" method="post" >
 				<label for="textUsername">Username</label>
-				<input type="text" id="textUsername"><br />
+				<input type="text" id="textUsername" name="username"><br />
 			
 				<label for="textPassword">Password</label>
-				<input type="password" id="textPassword">
+				<input type="password" id="textPassword" name="password">
 		
-				<br /><button class="login">Login<i class="icon-arrow-right icon-white iRight"></i></button>
+				<br /><input type="submit" class="login" value="Login">
 			</form>
 	
 		</article>
