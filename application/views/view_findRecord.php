@@ -19,51 +19,50 @@
 			<p>Type in the staff member's ID to find their records.</p><br />
 			
 			<article>
-			
+				<form action="findRecord" method="post" >
+
 					<label for="textSearchId">Staff ID: </label>
-					<input type="text" id="textSearchId">
+					<input type="text" id="textSearchId" name="searchID" value="00000002">
 			
-					<button class="submit"><i class="icon-search icon-white iLeft"></i>Find</button>
-			
+					<button type="submit" class="submit"><i class="icon-search icon-white iLeft"></i>Find</button>
+				</form>
 			</article>
 			
-			<article>
+			<?php
 			
-				<table id="recordTables" class="tablesorter">
+				if(isset($foundData)){
+					echo "
+						<article>
 				
-					<thead>
-						<tr>
-							<th>id</th>
-							<th>Name</th>
-							<th>Gender</th>
-							<th>Age</th>
-							<th>Actions</th>
-						</tr>
-					</thead>
+							<table id=\"recordTables\" class=\"tablesorter\">
 					
-					<tbody>
-						<tr>
-							<td>101</td>
-							<td>John Snow</td>
-							<td>Male</td>
-							<td>28</td>
-							<td><a href=""><i class="icon-file iTable"></i></a><a href=""><i class="icon-pencil"></i></a></td>
-						</tr>
-								
-						<tr>
-							<td>102</td>
-							<td>Ned Stark</td>
-							<td>Male</td>
-							<td>27</td>
-							<td><a href=""><i class="icon-file iTable"></i></a><a href=""><i class="icon-pencil"></i></a></td>
-						</tr>			
-						<tr>
-							<td>103</td>
-							<td>Marge Simpson</td>
-							<td>Female</td>
-							<td>36</td>
-							<td><a href=""><i class="icon-file iTable"></i></a><a href=""><i class="icon-pencil"></i></a></td>
-						</tr>
+							<thead>
+								<tr>
+									<th>Record ID</th>
+									<th>User ID</th>
+									<th>Record Type</th>
+									<th>Date Created</th>
+									<th>Date Modified</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+						
+							<tbody>
+						";
+				
+					foreach($foundData->result() as $row)
+					{
+						echo "<tr><td>" . $row->recordID . "</td>"; 
+						echo "<td>" . $row->userID . "</td>"; 
+						echo "<td>" . $row->recordType . "</td>"; 
+						echo "<td>" . $row->dateCreated . "</td>";
+						echo "<td>" . $row->dateModified . "</td>";
+						echo "<td><a href=\"viewRecord/view/" . $row->recordID . "\"><i class=\"icon-file iTable\"></i></a><a href=\"\"><i class=\"icon-pencil\"></i></a></td></tr>";
+
+					}
+				}
+				
+			?>
 					</tbody>
 				</table>
 			

@@ -1,3 +1,4 @@
+/*===GENERAL STYLING===*/
 *{
 	margin: 0px;
 	padding: 0px;
@@ -17,7 +18,153 @@ body{
 	color: white;
 }
 
-/*SIDE MENU*/
+img{
+	margin: 51px 0 0 50px;
+}
+
+/*Bootsrap Icons*/
+i.iLeft{
+	margin-right: 10px;
+}
+
+i.iRight{
+	margin-left: 5px;
+}
+
+i.iTable{
+	margin-right: 20px;
+}
+
+/*===HEADING/ TEXT===*/
+h1{
+	font-size: 36px;
+	font-weight: normal;
+	color: #444;
+}
+
+h2, h3{
+	text-align: center;
+	font-weight: normal;
+	color: white;
+}
+
+h2{
+font-size: 24px;
+}
+
+h3{
+font-size: 16px;
+}
+
+h4{
+font-size: 16px;
+margin-bottom: 10px;
+font-weight: normal;
+color: #444;
+}
+
+p {
+font-size: 14px;
+}
+
+/*===TABLE===*/
+
+table{
+border-spacing: 0px;
+border-collapse: collapse;
+}
+
+td, th{
+	border: 1px solid #cecedc;
+	margin: 0px;
+	padding: 5px 10px;
+}
+
+th{
+color: #444;
+}
+
+td{
+color: #66666d;
+}
+
+th.header { 
+    background-image: url(../img/tableUnsorted.gif);     
+    cursor: pointer; 
+    font-weight: bold; 
+    background-repeat: no-repeat; 
+    background-position: center left; 
+    padding-left: 20px; 
+    border-right: 1px solid #dad9c7; 
+    margin-left: -1px; 
+} 
+
+th.headerSortUp { 
+    background-image: url(../img/asc.gif); 
+} 
+
+th.headerSortDown { 
+    background-image: url(../img/desc.gif); 
+} 
+
+/*===FORM===*/
+
+
+select{
+background: none;
+border: 1px solid #cecedc;
+padding: 5px;
+color: #66666d;
+}
+
+.input{
+display: inline-block;
+margin-right: 50px;
+}
+
+label{
+font-size: 14px;
+margin-right: 5px;
+color: #66666d;
+display: inline-block;
+width: 100px;
+}
+
+input[type=text], input[type=password]{
+	border: 1px solid #cecedc;
+	background: none;
+	font-size: 14px;
+	padding: 3px 3px 3px 5px;
+	border-radius: 2px;
+	color: #66666d;
+	margin-bottom: 10px;
+}
+
+button.submit, button.login{
+	border: none;
+	background: #1abc9c;
+	border-bottom: 3px solid #16a085;
+	color: white;
+	height: 30px;
+	width: 65px;
+	cursor: pointer;
+}
+
+button.submit:active, button.logic:active{
+border: none; 	
+position: relative;
+top: 3px;
+}
+
+button.login{
+position: relative;
+margin-top: 10px;
+left: 100px;
+width: 70px;
+padding-left: 4px;
+}
+
+/*===SIDE MENU===*/
 
 #showSideMenu{
 background: white url("../img/sideMenu.png") no-repeat center center;
@@ -99,97 +246,11 @@ main{
 	padding: 30px 0 0 50px;
 }
 
-i.iLeft{
-	margin-right: 10px;
-}
-
-i.iRight{
-	margin-left: 5px;
-}
-
-i.iTable{
-	margin-right: 20px;
-}
-
-h1, h4{
-	font-size: 36px;
-	font-weight: normal;
-	color: #444;
-}
-
-h2, h3{
-	text-align: center;
-	font-weight: normal;
-	color: white;
-}
-
-h2{
-font-size: 24px;
-}
-
-h3{
-font-size: 16px;
-}
-
-h4{
-font-size: 16px;
-margin-bottom: 10px;
-}
-
-p {
-font-size: 14px;
-}
-
-img{
-	margin: 51px 0 0 50px;
-}
-
-label{
-font-size: 14px;
-margin-right: 5px;
-color: #66666d;
-display: inline-block;
-width: 100px;
-}
-
-input[type=text], input[type=password]{
-	border: 1px solid #cecedc;
-	background: none;
-	font-size: 14px;
-	padding: 3px 3px 3px 5px;
-	border-radius: 2px;
-	color: #66666d;
-	margin-bottom: 10px;
-}
-
-button.submit, button.login{
-	border: none;
-	background: #1abc9c;
-	border-bottom: 3px solid #16a085;
-	color: white;
-	height: 30px;
-	width: 65px;
-	cursor: pointer;
-}
-
-button.submit:active, button.logic:active{
-border: none; 	
-position: relative;
-top: 3px;
-}
-
-button.login{
-position: relative;
-margin-top: 10px;
-left: 70px;
-width: 70px;
-padding-left: 4px;
-}
-
 article {
 margin-top: 10px;
 padding: 20px 20px 20px 20px;
 background-color: white;
+box-shadow: 0px 0px 5px rgba(50,50,50,0.2);
 }
 
 article#login{
@@ -197,57 +258,6 @@ article#login{
 	width: 275px;
 }
 
-
-table{
-border-spacing: 0px;
-border-collapse: collapse;
-}
-
-td, th{
-	border: 1px solid #cecedc;
-	margin: 0px;
-	padding: 5px 10px;
-}
-
-th{
-color: #444;
-}
-
-td{
-color: #66666d;
-}
-
-th.header { 
-    background-image: url(../img/tableUnsorted.gif);     
-    cursor: pointer; 
-    font-weight: bold; 
-    background-repeat: no-repeat; 
-    background-position: center left; 
-    padding-left: 20px; 
-    border-right: 1px solid #dad9c7; 
-    margin-left: -1px; 
-} 
-
-th.headerSortUp { 
-    background-image: url(../img/asc.gif); 
-} 
-
-th.headerSortDown { 
-    background-image: url(../img/desc.gif); 
-} 
-
 #addRecord{
 width: 800px
-}
-
-select{
-background: none;
-border: 1px solid #cecedc;
-padding: 5px;
-color: #66666d;
-}
-
-.input{
-display: inline-block;
-margin-right: 50px;
 }

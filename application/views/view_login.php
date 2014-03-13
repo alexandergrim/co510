@@ -22,7 +22,7 @@
 				<label for="textPassword">Password</label>
 				<input type="password" id="textPassword" name="password">
 		
-				<br /><input type="submit" class="login" value="Login">
+				<br /><button type="submit" class="login" value="Login">Login<i class="icon-arrow-right icon-white iRight"></i></button>
 			</form>
 	
 		</article>
